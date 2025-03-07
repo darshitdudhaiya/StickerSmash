@@ -1,23 +1,21 @@
-import { View, Text, StyleSheet } from "react-native";
-import tailwind from "twrnc";
+import { Text, View, StyleSheet } from "react-native";
 
-export default function About() {
+export default function AboutScreen() {
   return (
-    <View style={tailwind`bg-indigo-500 h-full justify-center items-center`}>    
-      <Text style={style.text}>About</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>About screen</Text>
     </View>
   );
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent:"center",
-    alignItems:"center",
-    backgroundColor:"gray"
+    backgroundColor: "#25292e",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  text:{
-    color:"white",
-    fontSize: 29,
-  }
+  text: {
+    color: "#fff",
+  },
 });
